@@ -1,0 +1,20 @@
+html
+    head
+        title This is test
+    body
+        // Comentario
+        - var arreglo = [1,2,3,4,5];
+        - for (var i = arreglo.length - 1; i >=0; i--)        
+            p Hola #{arreglo[i]+1}
+            if true        
+                p.
+                    Hola haz click en #[a(href="google.com") link ]si quieres
+        each item in arreglo
+            case item
+                when 1
+                    p numero 1
+                when 2
+                    p numero 2
+                default
+                    p no es 1 ni 2
+        h1= hola
